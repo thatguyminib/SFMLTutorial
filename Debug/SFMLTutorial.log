@@ -1,3 +1,4 @@
 ﻿  Main.cpp
-  SFMLTutorial.vcxproj -> C:\Users\ThatGuyMiniB\Desktop\LearningC++\SFMLTutorial\Debug\SFMLTutorial.exe
-  SFMLTutorial.vcxproj -> C:\Users\ThatGuyMiniB\Desktop\LearningC++\SFMLTutorial\Debug\SFMLTutorial.pdb (Full PDB)
+c:\users\thatguyminib\desktop\learningc++\sfmltutorial\sfmltutorial\main.cpp(1): warning C4067: unexpected tokens following preprocessor directive - expected a newline
+  SFMLTutorial.vcxproj -> C:\Users\ThatGuyMiniB\Desktop\LearningC++\SFMLTutorial\SFMLTutorial\Debug\SFMLTutorial.exe
+  SFMLTutorial.vcxproj -> C:\Users\ThatGuyMiniB\Desktop\LearningC++\SFMLTutorial\SFMLTutorial\Debug\SFMLTutorial.pdb (Full PDB)

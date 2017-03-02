@@ -1,25 +1,30 @@
-#include "SFML\Graphics.hpp"
+#include "SFML\Graphics.hpp";
+#include <iostream>
 
 
-int main(int argc, char** argv)
+int main()
 {
-	sf::RenderWindow renderWindow(sf::VideoMode(640, 480), "Sprites Demo");
+	sf::RenderWindow window(sf::VideoMode(800, 600), "First SFML Game");
 
-	sf::Event event;
+	sf::Clock clock;
 
-	sf::Texture texture;
-	texture.loadFromFile("images/megaman.png");
+	sf::Time time;
 
-	sf::Sprite sprite(texture);
+	std::cout << time.asSeconds() << std::endl;
 
-	while (renderWindow.isOpen()) {
-		while (renderWindow.pollEvent(event)) {
-			if (event.type == sf::Event::EventType::Closed)
-				renderWindow.close();
+	while (window.isOpen()) {
+		sf::Event event;
+		while (window.pollEvent(event)) {
+			if (event.type == sf::Event::Closed) 
+				window.close();
+			
 		}
-		renderWindow.clear();
-		renderWindow.draw(sprite);
-		renderWindow.display();
+
+		time = clock.restart();
+		std::cout << time.asSeconds() << std::endl;
+		
+
+		window.display();
 	}
 	
 }
